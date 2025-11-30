@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎲 Random AI Quiz Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-dashboard">
+  <h1>🎲 Random AI Quiz Generator</h1>
+
+  <!-- Topic input -->
+  <div class="topic-input">
+    <input type="text" id="topic" placeholder="Type any topic you like...">
+    <button id="start-btn">Generate Quiz</button>
+    <p class="hint-text">
+      🌟 Type any topics you like and get 15 random questions! Give it a try and challenge yourself! 💪
+    </p>
+  </div>
+
+  <!-- Loading indicator -->
+  <div id="loading" class="hidden">⏳ Generating questions...</div>
+
+  <!-- Quiz area -->
+  <div id="quiz-area" class="quiz-area hidden">
+    <div class="timer" id="timer">⏰ 30s</div>
+    <div class="question-card" id="question-card"></div>
+    <div class="navigation">
+      <!-- Next button is handled by JS via Submit button -->
+    </div>
+  </div>
+
+  <!-- Score / Progress -->
+  <div id="result-area" class="hidden">
+    <h2>🎉 Quiz Completed!</h2>
+    <p id="score-text"></p>
+    <canvas id="score-chart" width="300" height="300"></canvas>
+    <button id="retry-btn">Retry</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

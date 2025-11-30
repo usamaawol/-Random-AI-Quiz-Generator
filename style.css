@@ -1,0 +1,132 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #6dd5fa, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.quiz-dashboard {
+  width: 90%;
+  max-width: 800px;
+  padding: 30px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.topic-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#topic {
+  padding: 12px 15px;
+  font-size: 1rem;
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 12px;
+  outline: none;
+  transition: 0.3s;
+}
+
+#topic:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 10px rgba(79,172,254,0.5);
+}
+
+#start-btn {
+  padding: 12px 20px;
+  margin-top: 10px;
+  border: 2px solid #aaa;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#start-btn:hover {
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+}
+
+.hint-text {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #333;
+  font-style: italic;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.question-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.question-card:hover {
+  transform: translateY(-5px);
+}
+
+.option-btn {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+  background: #f0f0f0;
+  transition: 0.3s;
+}
+
+.option-btn:hover {
+  background: #4facfe;
+  color: #fff;
+}
+
+.timer {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+#result-area canvas {
+  margin-top: 20px;
+}
+
+#retry-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+#retry-btn:hover {
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+}
